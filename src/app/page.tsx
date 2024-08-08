@@ -3,6 +3,10 @@
 import { useEffect, useState } from "react";
 
 // This page should do the following:
+// Center the main tag on the page
+// Add an H2 header in the middle saying "This is a counter"
+// Replace the font in the buttons with Google font Playfair Display
+// Change top button color to #EE4B2B
 // On load, get the data from the /api/seconds_now endpoint
 // seconds should increase by 1 every second
 // clicking reset should change it back to 0
@@ -47,7 +51,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="flex min-h-screen flex-col justify-center items-center p-24">
+    <main className="flex min-h-screen flex-col justify-center items-center p-24 outer-wrapper">
       <div className="bg-blue-400 text-white font-bold px-3 py-2 rounded-full mb-3">Seconds since EPOCH: {seconds}</div>
       <div className="d-flex">
         <button
