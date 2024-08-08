@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 // clicking + should increase it by 1 
 // clicking getDate should make an api request to /api/seconds_to_date
 // and it will return a date object in which you will console log the day
+// then write another handler to add an hour instead when the + button is pressed
 
 const fetchSeconds = async () => {
   const response = await fetch('/api/seconds_now');
