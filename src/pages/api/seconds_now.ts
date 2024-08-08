@@ -1,5 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
+export type SecondsNowRequest = {}
+
 export type SecondsNowResponse = {
   seconds: number;
 }

@@ -1,15 +1,14 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-// Example Req
-// {
-//  "seconds": 100000
-// }
+export type SecondsToDateRequest = {
+  seconds: number;
+}
 
-type Res = {
+type SecondsToDateResponse = {
   date: Date | null;
 }
 
-export default function handler(req: NextApiRequest, res: NextApiResponse<Res>) {
+export default function handler(req: NextApiRequest, res: NextApiResponse<SecondsToDateResponse>) {
   const { body } = req;
 
   // should take in seconds from epoch and return a Date object
