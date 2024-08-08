@@ -47,8 +47,8 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col justify-center items-center p-24">
-      <form onSubmit={onSubmit}>
-        <div className="bg-blue-400 text-white font-bold px-3 py-2 rounded-full mb-3">Seconds since EPOCH: {seconds}</div>
+      <div className="bg-blue-400 text-white font-bold px-3 py-2 rounded-full mb-3">Seconds since EPOCH: {seconds}</div>
+      <div className="d-flex">
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
           onClick={addSecond}
@@ -67,7 +67,7 @@ export default function Home() {
         >
           getDate
         </button>
-      </form>
+      </div>
     </main>
   );
 }
